@@ -2,7 +2,7 @@ name: example-nessus
 
 services:
   nessus-vulnerability-management:
-    image: tenable/nessus:latest-ubuntu
+    image: tenableofficial/nessus
     container_name: nessus-vulnerability-management
     ports:
       - "8834:8834"
@@ -21,7 +21,7 @@ services:
   
   
   nessus-security-center:
-    image: tenable/nessus:latest-ubuntu
+    image: tenableofficial/nessus
     container_name: nessus-security-center
     ports:
       - "8844:8834"
@@ -40,7 +40,7 @@ services:
     volumes:
       - ./data/app:/opt/nessus/var
 
-# networks:
-#   default:
-#     external:
-#       name: nessus
+networks:
+  default:
+    external:
+      name: nessus
