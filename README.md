@@ -7,7 +7,9 @@ Nessus is a vulnerability scanner that can be used to scan for vulnerabilities i
 1. Docker
 2. Create a Nessus Key on <https://www.tenable.com/downloads/nessus>
 
-## Start with docker cli
+## Start with Docker cli
+
+You can find more detailed information on the Nessus documentation page: <https://docs.tenable.com/nessus/Content/DeployNessusDocker.htm?Highlight=docker>.
 
 ### Run Nessus Manager
 
