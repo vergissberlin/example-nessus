@@ -1,0 +1,46 @@
+name: example-nessus
+
+services:
+  nessus-vulnerability-management:
+    image: tenable/nessus:latest-ubuntu
+    container_name: nessus-vulnerability-management
+    ports:
+      - "8834:8834"
+    env_file:
+      - .env
+    environment:
+      USERNAME: "admin"
+      PASSWORD: "password"
+      NAME: "Vergissberlin Nessus"
+      MANAGER_HOST: "nessus-security-center"
+      MANAGER_PORT: "8834"
+      NESSUS_PORT: "8834"
+      AUTO_UPDATE: "all"
+    volumes:
+      - ./data/security-center:/opt/nessus/var
+  
+  
+  nessus-security-center:
+    image: tenable/nessus:latest-ubuntu
+    container_name: nessus-security-center
+    ports:
+      - "8844:8834"
+    env_file:
+      - .env
+    environment:
+      USERNAME: "admin"
+      PASSWORD: "password"
+      SC_MANAGED: "yes"
+      LINKING_KEY: ""
+      NAME: "Vergissberlin Nessus"
+      MANAGER_HOST: "0.0.0.0"
+      MANAGER_PORT: "80"
+      NESSUS_PORT: "8834"
+      AUTO_UPDATE: "all"
+    volumes:
+      - ./data/app:/opt/nessus/var
+
+# networks:
+#   default:
+#     external:
+#       name: nessus
