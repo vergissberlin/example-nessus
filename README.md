@@ -1,6 +1,11 @@
 # example-nessus
 
-Security audit tool
+Nessus is a vulnerability scanner that can be used to scan for vulnerabilities in your network. This example shows how to run Nessus in a container.
+
+## Prerequisites
+
+1. Docker
+2. Create a Nessus Key on https://www.tenable.com/downloads/nessus
 
 ## Start with docker cli
 
