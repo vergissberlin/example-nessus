@@ -21,9 +21,9 @@ docker run --name "nessus-scanner" -d -p 8834:8834 -e USERNAME=admin -e PASSWORD
 
 ## Configure Nessus
 
-1. Open your browser and navigate to <http://localhost:8834>
-2. Select "Essentials" and click "Continue"
-3. Enter your name and email address and click "Continue"
-4. Copy and save the activation code and click "Continue"
+1. Open your browser and navigate to <http://localhost:8834>.
+2. Select "Essentials" and click "Continue".
+3. Enter your name and email address and click "Continue".
+4. Copy and save the activation code and click "Continue".
 5. Enter credentials and click "Continue"
-6. Wait up to 30 minutes for the scanner to be activated
+6. **Wait up to 30 minutes** for the scanner to be activated.
