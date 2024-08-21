@@ -1,6 +1,8 @@
-# example-nessus
+# Example Nessus Essentials
 
-Nessus is a vulnerability scanner that can be used to scan for vulnerabilities in your network. This example shows how to run Nessus in a container.
+The Tenable Nessus is a vulnerability scanner that can be used to scan for vulnerabilities in your network. This example shows how to run Nessus in a container.
+
+![Nessus Essentials Dashboard](./docs/dashboard.png)
 
 ## Prerequisites
 
