@@ -18,7 +18,7 @@ You can find more detailed information on the Nessus documentation page: <https:
 Run with Docker Compose:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 Run with Docker cli:
